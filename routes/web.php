@@ -18,13 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('test', function(){
-	$name = 'LANA';
+	$name = 'Ahmed';
 	dd($name);
 });
 
 Route::get('love', function(){
-	$Lana = 'Love';
-	dd($Lana);
+	$Ahmed = 'Love';
+	dd($Ahmed);
 });
 
 /* Redirect ->route(name ,destination, status) */
@@ -37,7 +37,7 @@ Route::get('blog',function() {
 });
 
 Route::get('new_blog',function() {
-	$name = "Lana";
+	$name = "Ahmed";
 	dd($name);
 })->name('my_new_blog');
 
@@ -46,7 +46,7 @@ Route::get('new_blog',function() {
 
 Route::prefix('admin')->group(function(){
 	Route::get('dashboard',function(){
-		$name = "Ahmed Love Lana" ;
+		$name = "Ahmed" ;
 		dd($name);
 	});
 
@@ -59,7 +59,7 @@ Route::prefix('admin')->group(function(){
 	});
 	Route::prefix('users')->group(function(){
 		Route::get('profile',function(){
-			$name = "Ahmed Love La" ;
+			$name = "Ahmed" ;
 			dd($name);
 		});
 	});
